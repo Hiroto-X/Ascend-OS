@@ -808,11 +808,15 @@ These are **not decided** in the documents available when this file was written.
 
 
 
-Begin with Roadmap **Phase 0 and Phase 1 only**: inspect the fresh scaffold, establish the smallest Ascend shell and typed bridge, and demonstrate a non-persistent typed command from React to Rust.
+Begin with Roadmap **Phase 0 and Phase 1 only**: inspect the fresh scaffold, establish the Ascend shell and typed bridge, and deliver the smallest durable Settings vertical slice.
 
 
 
-Do not begin a legacy audit, legacy-data migration, backup, SQLx/SQLite setup, Settings persistence, feature modules or AI implementation until their corresponding roadmap phase. The first persisted vertical slice is Settings in Phase 2.
+Phase 1 includes Rust module boundaries, typed errors and structured logging, application-data directory resolution, SQLx-managed SQLite connection management, versioned migrations, a Settings repository and application service, Rust-side validation, typed Tauri commands and frontend bridge, a functional React Settings UI, real SQLite-backed persistence, and automated persistence and validation tests.
+
+Phase 2 expands the shared durable-data foundations rather than introducing SQLite for the first time. It adds normalized domain schemas, applies the established stable-ID convention to shared records, generalized relationships, FTS5 infrastructure, and shared repository patterns only as required by the next approved vertical slice.
+
+Do not begin a legacy audit, legacy-data migration, backup, imports, feature data models beyond the smallest Settings slice, or AI implementation until their corresponding roadmap phase.
 
 
 

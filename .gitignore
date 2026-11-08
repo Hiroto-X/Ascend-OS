@@ -7,6 +7,26 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Local Ascend runtime data and SQLite sidecar files
+.ascend/
+.ascend-data/
+.ascend-test-data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Local credentials and developer overrides
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
 node_modules
 dist
 dist-ssr
